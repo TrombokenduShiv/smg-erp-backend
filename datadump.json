@@ -1,0 +1,362 @@
+[
+{
+  "model": "identity.user",
+  "pk": "a0402de1-b773-41f0-891a-0656da7e66d5",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$XWGpEUpasHFS8dPVq7NehQ$3A/FTWq9AD4vpBbcSp2oaQKiynB7JMS2wA2yUbtIza0=",
+    "last_login": null,
+    "is_superuser": true,
+    "first_name": "Genesis",
+    "last_name": "Admin",
+    "email": "root@smg.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2025-12-12T03:34:34.786Z",
+    "display_id": "25SUP1212001",
+    "is_first_login": true,
+    "role": "SUP",
+    "department": "General",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "identity.user",
+  "pk": "ded41316-5285-42ce-897e-d22319299066",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$BoguNzYJGd4UZw7EvYoQSc$LdtrzVVk/1aVOzjc1aZ83LcChTd+0j4IlEuTR8cGPj4=",
+    "last_login": null,
+    "is_superuser": false,
+    "first_name": "Test",
+    "last_name": "Intern",
+    "email": "intern.test@smg.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-12-12T04:45:30.995Z",
+    "display_id": "25INT1212001",
+    "is_first_login": true,
+    "role": "INT",
+    "department": "General",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "hr.internprofile",
+  "pk": 1,
+  "fields": {
+    "user": "a0402de1-b773-41f0-891a-0656da7e66d5",
+    "designation": "Super Admin",
+    "department": "Management",
+    "phone_number": "9999999999",
+    "personal_email": "",
+    "profile_picture": "profile_pics/default_avatar.png",
+    "monthly_stipend": "15000.00",
+    "joining_date": "2025-12-12",
+    "is_active": true
+  }
+},
+{
+  "model": "hr.internprofile",
+  "pk": 2,
+  "fields": {
+    "user": "ded41316-5285-42ce-897e-d22319299066",
+    "designation": "SDE Intern",
+    "department": "Engineering",
+    "phone_number": "9876543210",
+    "personal_email": "personal.test@gmail.com",
+    "profile_picture": "profile_pics/default_avatar.png",
+    "monthly_stipend": "25000.00",
+    "joining_date": "2025-12-12",
+    "is_active": true
+  }
+},
+{
+  "model": "operations.attendancelog",
+  "pk": 1,
+  "fields": {
+    "user": "a0402de1-b773-41f0-891a-0656da7e66d5",
+    "date": "2025-12-01",
+    "check_in": "09:00:00",
+    "check_out": "18:00:00",
+    "status": "P",
+    "is_finalized": true
+  }
+},
+{
+  "model": "operations.attendancelog",
+  "pk": 2,
+  "fields": {
+    "user": "a0402de1-b773-41f0-891a-0656da7e66d5",
+    "date": "2025-12-02",
+    "check_in": "09:00:00",
+    "check_out": "18:00:00",
+    "status": "P",
+    "is_finalized": true
+  }
+},
+{
+  "model": "operations.attendancelog",
+  "pk": 3,
+  "fields": {
+    "user": "a0402de1-b773-41f0-891a-0656da7e66d5",
+    "date": "2025-12-03",
+    "check_in": "09:00:00",
+    "check_out": "18:00:00",
+    "status": "P",
+    "is_finalized": true
+  }
+},
+{
+  "model": "operations.attendancelog",
+  "pk": 4,
+  "fields": {
+    "user": "a0402de1-b773-41f0-891a-0656da7e66d5",
+    "date": "2025-12-04",
+    "check_in": "09:00:00",
+    "check_out": "18:00:00",
+    "status": "P",
+    "is_finalized": true
+  }
+},
+{
+  "model": "operations.attendancelog",
+  "pk": 5,
+  "fields": {
+    "user": "a0402de1-b773-41f0-891a-0656da7e66d5",
+    "date": "2025-12-05",
+    "check_in": "09:00:00",
+    "check_out": "18:00:00",
+    "status": "P",
+    "is_finalized": true
+  }
+},
+{
+  "model": "operations.attendancelog",
+  "pk": 6,
+  "fields": {
+    "user": "a0402de1-b773-41f0-891a-0656da7e66d5",
+    "date": "2025-12-08",
+    "check_in": "09:00:00",
+    "check_out": "18:00:00",
+    "status": "P",
+    "is_finalized": true
+  }
+},
+{
+  "model": "operations.attendancelog",
+  "pk": 7,
+  "fields": {
+    "user": "a0402de1-b773-41f0-891a-0656da7e66d5",
+    "date": "2025-12-09",
+    "check_in": "09:00:00",
+    "check_out": "18:00:00",
+    "status": "A",
+    "is_finalized": true
+  }
+},
+{
+  "model": "operations.attendancelog",
+  "pk": 8,
+  "fields": {
+    "user": "a0402de1-b773-41f0-891a-0656da7e66d5",
+    "date": "2025-12-10",
+    "check_in": "09:00:00",
+    "check_out": "18:00:00",
+    "status": "P",
+    "is_finalized": true
+  }
+},
+{
+  "model": "operations.attendancelog",
+  "pk": 9,
+  "fields": {
+    "user": "a0402de1-b773-41f0-891a-0656da7e66d5",
+    "date": "2025-12-11",
+    "check_in": "09:00:00",
+    "check_out": "18:00:00",
+    "status": "P",
+    "is_finalized": true
+  }
+},
+{
+  "model": "operations.attendancelog",
+  "pk": 10,
+  "fields": {
+    "user": "a0402de1-b773-41f0-891a-0656da7e66d5",
+    "date": "2025-12-12",
+    "check_in": "09:00:00",
+    "check_out": "18:00:00",
+    "status": "HD",
+    "is_finalized": true
+  }
+},
+{
+  "model": "operations.attendancelog",
+  "pk": 11,
+  "fields": {
+    "user": "ded41316-5285-42ce-897e-d22319299066",
+    "date": "2025-12-12",
+    "check_in": "09:30:00",
+    "check_out": "18:30:00",
+    "status": "P",
+    "is_finalized": true
+  }
+},
+{
+  "model": "operations.attendancelog",
+  "pk": 12,
+  "fields": {
+    "user": "ded41316-5285-42ce-897e-d22319299066",
+    "date": "2025-12-11",
+    "check_in": null,
+    "check_out": null,
+    "status": "A",
+    "is_finalized": true
+  }
+},
+{
+  "model": "operations.attendancelog",
+  "pk": 13,
+  "fields": {
+    "user": "ded41316-5285-42ce-897e-d22319299066",
+    "date": "2025-12-10",
+    "check_in": "09:30:00",
+    "check_out": "18:30:00",
+    "status": "P",
+    "is_finalized": true
+  }
+},
+{
+  "model": "operations.attendancelog",
+  "pk": 14,
+  "fields": {
+    "user": "ded41316-5285-42ce-897e-d22319299066",
+    "date": "2025-12-09",
+    "check_in": "10:00:00",
+    "check_out": "14:00:00",
+    "status": "HD",
+    "is_finalized": true
+  }
+},
+{
+  "model": "operations.attendancelog",
+  "pk": 15,
+  "fields": {
+    "user": "ded41316-5285-42ce-897e-d22319299066",
+    "date": "2025-12-08",
+    "check_in": "09:30:00",
+    "check_out": "18:30:00",
+    "status": "P",
+    "is_finalized": true
+  }
+},
+{
+  "model": "operations.attendancelog",
+  "pk": 16,
+  "fields": {
+    "user": "ded41316-5285-42ce-897e-d22319299066",
+    "date": "2025-12-07",
+    "check_in": "09:30:00",
+    "check_out": "18:30:00",
+    "status": "P",
+    "is_finalized": true
+  }
+},
+{
+  "model": "operations.attendancelog",
+  "pk": 17,
+  "fields": {
+    "user": "ded41316-5285-42ce-897e-d22319299066",
+    "date": "2025-12-06",
+    "check_in": "09:30:00",
+    "check_out": "18:30:00",
+    "status": "P",
+    "is_finalized": true
+  }
+},
+{
+  "model": "operations.leaverequest",
+  "pk": 1,
+  "fields": {
+    "user": "a0402de1-b773-41f0-891a-0656da7e66d5",
+    "leave_type": "CL",
+    "from_date": "2025-12-13",
+    "to_date": "2025-12-14",
+    "reason": "Not feeling well (Simulation)",
+    "current_status": "PH",
+    "applied_on": "2025-12-12T03:42:44.339Z",
+    "rejection_reason": ""
+  }
+},
+{
+  "model": "operations.leaverequest",
+  "pk": 2,
+  "fields": {
+    "user": "a0402de1-b773-41f0-891a-0656da7e66d5",
+    "leave_type": "CL",
+    "from_date": "2025-12-25",
+    "to_date": "2025-12-26",
+    "reason": "Xmas",
+    "current_status": "AP",
+    "applied_on": "2025-12-12T03:46:57.575Z",
+    "rejection_reason": ""
+  }
+},
+{
+  "model": "operations.leaverequest",
+  "pk": 3,
+  "fields": {
+    "user": "ded41316-5285-42ce-897e-d22319299066",
+    "leave_type": "ML",
+    "from_date": "2025-12-17",
+    "to_date": "2025-12-18",
+    "reason": "Scheduled dental surgery",
+    "current_status": "PH",
+    "applied_on": "2025-12-12T04:45:31.412Z",
+    "rejection_reason": ""
+  }
+},
+{
+  "model": "operations.leaverequest",
+  "pk": 4,
+  "fields": {
+    "user": "ded41316-5285-42ce-897e-d22319299066",
+    "leave_type": "CL",
+    "from_date": "2025-12-02",
+    "to_date": "2025-12-02",
+    "reason": "Family function",
+    "current_status": "AP",
+    "applied_on": "2025-12-12T04:45:31.412Z",
+    "rejection_reason": ""
+  }
+},
+{
+  "model": "finance.salaryslip",
+  "pk": 1,
+  "fields": {
+    "user": "a0402de1-b773-41f0-891a-0656da7e66d5",
+    "month": "2025-12-01",
+    "base_amount": "15000.00",
+    "present_days": 8,
+    "total_working_days": 30,
+    "final_amount": "4250.00",
+    "status": "GEN",
+    "generated_on": "2025-12-12T04:02:15.951Z"
+  }
+},
+{
+  "model": "finance.salaryslip",
+  "pk": 2,
+  "fields": {
+    "user": "ded41316-5285-42ce-897e-d22319299066",
+    "month": "2025-11-01",
+    "base_amount": "25000.00",
+    "present_days": 28,
+    "total_working_days": 30,
+    "final_amount": "23500.00",
+    "status": "PD",
+    "generated_on": "2025-12-12T04:45:31.412Z"
+  }
+}
+]
