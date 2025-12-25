@@ -1,7 +1,5 @@
 # SMG Enterprise Resource Planning (ERP) System
 
-**Visionary Quantitative Trading & Operations Portal**
-
 This repository contains the **Backend Microservices Architecture** for the SMG ERP. It is designed to handle high-performance internal operations, including Identity Management (RBAC), Leave Automation, and Asynchronous Financial Processing (Salary Slip Generation).
 
 ## Tech Stack
