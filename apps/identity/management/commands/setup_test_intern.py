@@ -8,12 +8,15 @@ import random
 # -----------------------------------------------------------------------------
 # ⚠️ ACTION REQUIRED: Verify these import paths match your project structure
 # -----------------------------------------------------------------------------
-# Assuming InternProfile is in apps.profiles or apps.identity
+# HR App: Handles Intern Profiles
 from apps.hr.models import InternProfile
-# Assuming AttendanceLog and LeaveRequest are in apps.attendance or similar
+
+# Operations App: Handles Daily Logic (Attendance & Leaves)
+# Note: Ensure your model classes are named 'AttendanceLog' and 'LeaveRequest' inside models.py
 from apps.operations.models import AttendanceLog, LeaveRequest 
-# Assuming SalarySlip is in apps.payroll
-from apps.finance.models import SalarySlip 
+
+# Finance App: Handles Salaries
+from apps.finance.models import SalarySlip
 # -----------------------------------------------------------------------------
 
 User = get_user_model()

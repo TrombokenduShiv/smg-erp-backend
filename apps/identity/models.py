@@ -8,6 +8,18 @@ from .utils import increment_seq
 # =========================================================
 # 1. CUSTOM USER MANAGER
 # =========================================================
+class User(AbstractUser):
+    # 1. Internal ID
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    
+    # 2. External ID - FIX HERE: Add blank=True
+    display_id = models.CharField(
+        max_length=12, 
+        unique=True, 
+        editable=False, 
+        blank=True,  # <--- THIS ALLOWS VALIDATION TO PASS WHEN EMPTY
+        help_text="The Unique Smart ID (e.g., 25INT1211A01)"
+    )
 class CustomUserManager(BaseUserManager):
     """
     Custom manager to handle user creation without a 'username' argument.
